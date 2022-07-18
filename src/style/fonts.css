@@ -1,0 +1,5 @@
+@font-face {
+	font-family: "PTRootUI";
+	src: url("../assets/fonts/PT-Root-UI_Regular.woff2") format("woff2"),
+		url("../assets/fonts/PT-Root-UI_Bold.woff2") format("woff");
+}
