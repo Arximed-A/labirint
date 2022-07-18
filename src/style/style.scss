@@ -1,3 +1,12 @@
+//========================================================================================================================================================
+// Шрифты
+@font-face {
+  font-family: "PTRootUI";
+  src: url("../assets/fonts/PT-Root-UI_Regular.woff2") format("woff2"),
+    url("../assets/fonts/PT-Root-UI_Bold.woff2") format("woff");
+}
+//========================================================================================================================================================
+
 $blue: rgba(6, 92, 194, 1);
 $grey: rgba(214, 214, 214, 1);
 $red: rgba(224, 29, 29, 1);
@@ -6,506 +15,506 @@ $white: rgba(248, 248, 248, 1);
 $md1: 1750px;
 
 * {
-	font-family: PTRootUI, sans-serif;
-	font-weight: 400;
-	font-size: 22px;
-	color: $black;
-	box-sizing: border-box;
-	line-height: 28px;
-	@media (max-width: $md1) {
-		font-size: 14px;
-		line-height: 21px;
-	}
+  font-family: PTRootUI, sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: $black;
+  box-sizing: border-box;
+  line-height: 28px;
+  @media (max-width: $md1) {
+    font-size: 14px;
+    line-height: 21px;
+  }
 }
+// Блоки со стилями
 .link {
-	color: $blue;
-	text-decoration: none;
+  color: $blue;
+  text-decoration: none;
+  @media (max-width: $md1) {
+    font-size: 17px;
+  }
+}
 
-	@media (max-width: $md1) {
-		font-size: 17px;
-	}
-}
 .title {
-	font-weight: 700;
-	font-size: 29px;
-	@media (max-width: $md1) {
-		font-size: 21px;
-		line-height: 26px;
-	}
-	&_slim {
-		font-weight: 400;
-	}
+  font-weight: 700;
+  font-size: 29px;
+  &_slim {
+    font-weight: 400;
+  }
+  @media (max-width: $md1) {
+    font-size: 21px;
+    line-height: 26px;
+  }
 }
+
 .subtitle {
-	font-weight: 700;
-	letter-spacing: 0.13px;
-	@media (max-width: $md1) {
-		font-size: 17px;
-	}
+  font-weight: 700;
+  letter-spacing: 0.13px;
+  @media (max-width: $md1) {
+    font-size: 17px;
+  }
 }
+
 .box {
-	padding: 19px;
-	border: 1px solid $grey;
-	border-radius: 4px;
-	cursor: pointer;
-	&_active {
-		border: 2px solid $blue;
-	}
-	@media (max-width: $md1) {
-		padding: 16px 20px;
-	}
+  padding: 19px;
+  border: 1px solid $grey;
+  border-radius: 4px;
+  cursor: pointer;
+  &_active {
+    border: 2px solid $blue;
+  }
+  @media (max-width: $md1) {
+    padding: 16px 20px;
+  }
 }
+
 .btn {
-	height: 80px;
-	border: 1px solid rgba(224, 29, 29, 1);
-	background: linear-gradient(0deg, #ec0002, #ec0002),
-		linear-gradient(91.91deg, rgba(208, 38, 38, 0) 0%, #d02626 99.65%), #ff0000;
-	box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.12), 0px 3px 1px rgba(0, 0, 0, 0.04), 0px 2px 0px rgba(149, 135, 128, 0.4);
-	border-radius: 4px;
-	color: #ffffff;
-	cursor: pointer;
-	font-size: 29px;
-	letter-spacing: 0.5px;
-	line-height: 37px;
-	&_white {
-		color: $black;
-		background: $white;
-		border: 1px solid $grey;
-		width: 100%;
-	}
-	@media (max-width: $md1) {
-		font-size: 17px;
-		height: 52px;
-		line-height: 21px;
-	}
+  height: 80px;
+  border: 1px solid rgba(224, 29, 29, 1);
+  background: linear-gradient(0deg, #ec0002, #ec0002),
+    linear-gradient(91.91deg, rgba(208, 38, 38, 0) 0%, #d02626 99.65%), #ff0000;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.12), 0px 3px 1px rgba(0, 0, 0, 0.04), 0px 2px 0px rgba(149, 135, 128, 0.4);
+  border-radius: 4px;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 29px;
+  letter-spacing: 0.5px;
+  line-height: 37px;
+  &_white {
+    color: $black;
+    background: $white;
+    border: 1px solid $grey;
+    width: 100%;
+  }
+  @media (max-width: $md1) {
+    font-size: 17px;
+    height: 52px;
+    line-height: 21px;
+  }
 }
 //========================================================================================================================================================
 .wrapper {
-	margin: 0px auto;
-	max-width: 1743px;
-	padding: 0px 0px 155px 0px;
-	@media (max-width: $md1) {
-		max-width: 360px;
-		padding: 40px 16px 155px 16px;
-	}
+  margin: 0px auto;
+  max-width: 1743px;
+  padding: 0px 0px 155px 0px;
+  @media (max-width: $md1) {
+    max-width: 360px;
+    padding: 40px 16px 155px 16px;
+  }
 }
 // Header
 .header-title {
-	margin: 49px 0px 17px 44px;
-	font-size: 35px;
-	font-weight: 700;
-	line-height: 44px;
-	@media (max-width: $md1) {
-		font-size: 27px;
-		// !!!!!!!!!!!!!!!!!!!!!!!!!
-		margin: 0px 0px 35px 0px;
-	}
+  margin: 49px 0px 17px 44px;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 44px;
+  @media (max-width: $md1) {
+    font-size: 27px;
+    margin: 0px 0px 35px 0px;
+  }
 }
 //========================================================================================================================================================
 
 // Body
 .body {
-	display: flex;
-	border: 1px solid #c5c5c5;
-	border-radius: 6px;
-	@media (max-width: $md1) {
-		border: none;
-		border-radius: none;
-		display: block;
-	}
-	&__delivery {
-		flex: 0 0 1118px;
-		border-right: 1px solid rgba(140, 140, 140, 1);
-		@media (max-width: $md1) {
-			display: block;
-			border: none;
-		}
-	}
-	&__order {
-		flex: 0 0 626px;
-	}
+  display: flex;
+  border: 1px solid #c5c5c5;
+  border-radius: 6px;
+  &__delivery {
+    flex: 0 0 1118px;
+    border-right: 1px solid rgba(140, 140, 140, 1);
+  }
+  &__order {
+    flex: 0 0 626px;
+  }
+  @media (max-width: $md1) {
+    border: none;
+    border-radius: none;
+    display: block;
+    &__delivery {
+      display: block;
+      border: none;
+    }
+  }
 }
 
 .delivery {
-	padding: 44px 82px 44px 43px;
-	@media (max-width: $md1) {
-		padding: 0px 0px 0px 0px;
-	}
-	&__header {
-		margin: 0px 0px 11px 0px;
-		@media (max-width: $md1) {
-			margin: 0px 0px 7px 0px;
-		}
-	}
-	&__destination {
-		margin: 0px 0px 0px 0px;
-	}
-	&__new-place {
-		display: inline-block;
-		margin: 0px 0px 29px 0px;
-		@media (max-width: $md1) {
-			margin: 0px 0px 24px 0px;
-		}
-	}
-	&__date {
-		margin: 0px 0px 12px 0px;
-		@media (max-width: $md1) {
-			margin: 0px 0px 24px 0px;
-		}
-	}
-	&__service {
-		margin: 0px 0px 35px 0px;
-	}
-	&__recipient {
-	}
+  padding: 44px 82px 44px 43px;
+  &__header {
+    margin: 0px 0px 11px 0px;
+  }
+  &__destination {
+    margin: 0px 0px 0px 0px;
+  }
+  &__new-place {
+    display: inline-block;
+    margin: 0px 0px 29px 0px;
+  }
+  &__date {
+    margin: 0px 0px 12px 0px;
+  }
+  &__service {
+    margin: 0px 0px 35px 0px;
+  }
+  @media (max-width: $md1) {
+    padding: 0px 0px 0px 0px;
+    &__header {
+      margin: 0px 0px 7px 0px;
+    }
+    &__new-place {
+      margin: 0px 0px 24px 0px;
+    }
+    &__date {
+      margin: 0px 0px 24px 0px;
+    }
+  }
 }
 
 .header-delivery {
-	display: flex;
-	justify-content: space-between;
-	&__title {
-	}
-	&__navigation {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		@media (max-width: $md1) {
-			display: none;
-		}
-	}
-	&__arrow {
-		width: 40px;
-		height: 40px;
-		border-radius: 4px;
-		opacity: 0.5;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		transition: border, opacity 0.3s ease 0s;
-		cursor: pointer;
-		&:first-child {
-			margin: 0px 4px 0px 0px;
-			transform: rotate(180deg);
-		}
-		&:hover {
-			border: 1px solid $grey;
-			opacity: 1;
-		}
-	}
+  display: flex;
+  justify-content: space-between;
+  &__navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__arrow {
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    opacity: 0.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: border, opacity 0.3s ease 0s;
+    cursor: pointer;
+    &:first-child {
+      margin: 0px 4px 0px 0px;
+      transform: rotate(180deg);
+    }
+    &:hover {
+      border: 1px solid $grey;
+      opacity: 1;
+    }
+  }
+  @media (max-width: $md1) {
+    display: none;
+  }
 }
 
 .destination-delivery {
-	display: flex;
-	// justify-content: space-between;
-	flex-wrap: wrap;
-	&__adress {
-		flex: 0 0 489px;
-
-		margin: 0px 14px 13px 0px;
-		&:last-child {
-			margin: 0px 0px 13px 0px;
-		}
-		@media (max-width: $md1) {
-			flex: 0 0 300px;
-			&:last-child {
-				display: none;
-				// !!!!!!!!!!!!!!!!!!!!!!!!!!!
-			}
-		}
-	}
+  display: flex;
+  flex-wrap: wrap;
+  &__adress {
+    flex: 0 0 489px;
+    margin: 0px 14px 13px 0px;
+    &:last-child {
+      margin: 0px 0px 13px 0px;
+    }
+  }
+  @media (max-width: $md1) {
+    &__adress {
+      flex: 0 0 300px;
+      &:last-child {
+        display: none;
+        // !!!!!!!!!!!!!!!!!!!!!!!!!!! каруселька
+      }
+    }
+  }
 }
 
 .adress-destination {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	min-height: 152px;
-	&__wrapper {
-		margin: 0px 10px 0px 0px;
-	}
-	&__title {
-		@media (max-width: $md1) {
-			margin: 0px 0px 4px 0px;
-		}
-	}
-	&__text {
-		flex: 0 0 360px;
-		letter-spacing: -0.2px;
-	}
-	&__cost {
-		flex: 1 0 70px;
-		text-align: right;
-		@media (max-width: $md1) {
-			font-size: 17px;
-		}
-	}
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 152px;
+  &__wrapper {
+    margin: 0px 10px 0px 0px;
+  }
+  &__text {
+    flex: 0 0 360px;
+    letter-spacing: -0.2px;
+  }
+  &__cost {
+    flex: 1 0 70px;
+    text-align: right;
+  }
+  @media (max-width: $md1) {
+    &__title {
+      margin: 0px 0px 4px 0px;
+    }
+    &__cost {
+      font-size: 17px;
+    }
+  }
 }
 
 .date-delivery {
-	display: flex;
-	align-items: center;
-	flex-wrap: wrap;
-	&__item {
-		flex: 0 1 auto;
-		margin: 0px 16px 0px 0px;
-		@media (max-width: $md1) {
-			flex: 0 0 140px;
-			margin: 0px 8px 14px 0px;
-			min-height: 110px;
-		}
-		@media (min-width: $md1) {
-			&:last-of-type {
-				margin: 0px 33px 0px 0px;
-			}
-		}
-	}
-	&__new-date {
-	}
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  &__item {
+    flex: 0 1 auto;
+    margin: 0px 16px 0px 0px;
+  }
+  @media (max-width: $md1) {
+    &__item {
+      flex: 0 0 140px;
+      margin: 0px 8px 14px 0px;
+      min-height: 110px;
+    }
+  }
+  @media (min-width: $md1) {
+    &:last-of-type {
+      margin: 0px 33px 0px 0px;
+    }
+  }
 }
 
 .item-date {
-	@media (max-width: $md1) {
-		display: flex;
-		flex-direction: column;
-	}
-	&__title {
-		flex: 1 1 auto;
-	}
-	&__text {
-	}
+  &__title {
+    flex: 1 1 auto;
+  }
+  @media (max-width: $md1) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .service {
-	&__item {
-		display: flex;
-		align-items: center;
-		@media (max-width: $md1) {
-			align-items: flex-start;
-		}
-		&:first-child {
-			margin: 0px 0px 13px 0px;
-		}
-	}
-	&__check {
-		width: 24px;
-		height: 24px;
-		margin: 0px 10px 0px 0px;
-		border-radius: 2px;
-		cursor: pointer;
-	}
-	&__text {
-		cursor: pointer;
-		@media (max-width: $md1) {
-			font-size: 17px;
-		}
-	}
+  &__item {
+    display: flex;
+    align-items: center;
+    &:first-child {
+      margin: 0px 0px 13px 0px;
+    }
+  }
+  &__check {
+    width: 24px;
+    height: 24px;
+    margin: 0px 10px 0px 0px;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  &__text {
+    cursor: pointer;
+  }
+  @media (max-width: $md1) {
+    &__item {
+      align-items: flex-start;
+    }
+    &__text {
+      font-size: 17px;
+    }
+  }
 }
 
 .recipient-delivery {
-	display: flex;
-	flex-wrap: wrap;
-	@media (max-width: $md1) {
-		align-items: center;
-	}
-	&__wrapper {
-		flex: 0 1 572px;
-		margin: 0px 14px 15px 0px;
-		position: relative;
-		&::before {
-			content: "Имя и фамилия";
-			position: absolute;
-			font-size: 17px;
-			line-height: 21px;
-			left: 14px;
-			top: 10px;
-		}
-		@media (max-width: $md1) {
-			order: 2;
-			flex: 1 1 auto;
-			margin: 0px 0px 15px 0px;
-		}
-		&_small {
-			flex: 0 0 287px;
-			&::before {
-				content: "Контактный телефон";
-			}
-			@media (max-width: $md1) {
-				order: 3;
-				flex: 0 0 210px;
-				margin: 0px 16px 0px 0px;
-			}
-		}
-	}
-	&__title {
-		flex: 1 1 100%;
-		margin: 0px 0px 16px 0px;
-		@media (max-width: $md1) {
-			order: 0;
-			flex: 1 0 auto;
-			margin: 0px 70px 8px 0px;
-		}
-	}
-
-	&__list {
-		height: 74px;
-		padding: 27px 10px 0px;
-		width: 100%;
-	}
-	&__item {
-	}
-	&__new-recipient {
-		flex: 0 0 auto;
-		margin: 0px 398px 0px 0px;
-		@media (max-width: $md1) {
-			order: 1;
-			margin: 0px 0px 8px 0px;
-		}
-	}
-	&__new-phone {
-		flex: 1 1 auto;
-		@media (max-width: $md1) {
-			order: 4;
-			flex: 1 1 102px;
-		}
-	}
+  display: flex;
+  flex-wrap: wrap;
+  &__wrapper {
+    flex: 0 1 572px;
+    margin: 0px 14px 15px 0px;
+    position: relative;
+    &::before {
+      content: "Имя и фамилия";
+      position: absolute;
+      font-size: 17px;
+      line-height: 21px;
+      left: 14px;
+      top: 10px;
+    }
+    &_small {
+      flex: 0 0 287px;
+      &::before {
+        content: "Контактный телефон";
+      }
+    }
+  }
+  &__title {
+    flex: 1 1 100%;
+    margin: 0px 0px 16px 0px;
+  }
+  &__list {
+    height: 74px;
+    padding: 27px 10px 0px;
+    width: 100%;
+  }
+  &__new-recipient {
+    flex: 0 0 auto;
+    margin: 0px 398px 0px 0px;
+  }
+  &__new-phone {
+    flex: 1 1 auto;
+  }
+  @media (max-width: $md1) {
+    align-items: center;
+    &__wrapper {
+      order: 2;
+      flex: 1 1 auto;
+      margin: 0px 0px 15px 0px;
+      &_small {
+        order: 3;
+        flex: 0 0 210px;
+        margin: 0px 16px 0px 0px;
+      }
+    }
+    &__title {
+      order: 0;
+      flex: 1 0 auto;
+      margin: 0px 70px 8px 0px;
+    }
+    &__new-recipient {
+      order: 1;
+      margin: 0px 0px 8px 0px;
+    }
+    &__new-phone {
+      order: 4;
+      flex: 0 1 102px;
+    }
+  }
 }
 
 //========================================================================================================================================================
 
 .order {
-	@media (max-width: $md1) {
-		display: none;
-	}
-	padding: 45px 86px 0px 50px;
-	&__title {
-		margin: 0px 0px 34px 0px;
-	}
-	&__item {
-		margin: 0px 0px 14px 0px;
-	}
-	&__wrapper {
-		border-bottom: 1px solid $grey;
-		padding: 0px 0px 6px 0px;
-	}
+  padding: 45px 86px 0px 50px;
+  &__title {
+    margin: 0px 0px 34px 0px;
+  }
+  &__item {
+    margin: 0px 0px 14px 0px;
+  }
+  &__wrapper {
+    border-bottom: 1px solid $grey;
+    padding: 0px 0px 6px 0px;
+  }
+  @media (max-width: $md1) {
+    display: none;
+  }
 }
-.item-order {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
 
-	&__text {
-		margin: 0px 10px 0px 0px;
-	}
-	&__number {
-		font-weight: 700;
-	}
-	@media (max-width: $md1) {
-		font-size: 17px;
-		&__text {
-			font-size: inherit;
-		}
-		&__number {
-			font-size: inherit;
-		}
-	}
+.item-order {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__text {
+    margin: 0px 10px 0px 0px;
+  }
+  &__number {
+    font-weight: 700;
+  }
+  @media (max-width: $md1) {
+    font-size: 17px;
+    &__text {
+      font-size: inherit;
+    }
+    &__number {
+      font-size: inherit;
+    }
+  }
 }
 //========================================================================================================================================================
 
 // Footer
 .footer {
-	width: 100%;
-	position: fixed;
-	bottom: 0;
-	border-top: 1px solid $grey;
-	background-color: $white;
-	&__wrapper {
-		min-height: 119px;
-		// продумать правый отступ, что бы не дёргался при изменении цены
-		padding: 0px 184px 0 120px;
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		@media (max-width: $md1) {
-			padding: 16px;
-			flex-wrap: wrap;
-		}
-	}
-	&__button {
-		flex: 0 1 398px;
-		@media (max-width: $md1) {
-			order: 1;
-		}
-	}
-	&__total {
-		display: flex;
-		align-items: center;
-		@media (max-width: $md1) {
-			order: 0;
-			flex: 1 1 auto;
-		}
-	}
-	&__text {
-		margin: 0px 113px 0px 0px;
-		@media (max-width: $md1) {
-			margin: 0px 4px 0px 0px;
-			font-weight: 700;
-		}
-	}
-	&__cost {
-		font-size: 35px;
-		font-weight: 700;
-		line-height: 44px;
-		@media (max-width: $md1) {
-			font-size: 14px;
-			line-height: 18px;
-			flex: 1 1 auto;
-		}
-	}
-	&__more {
-		font-size: 14px;
-		@media (min-width: $md1) {
-			display: none;
-		}
-	}
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  border-top: 1px solid $grey;
+  background-color: $white;
+  &__wrapper {
+    min-height: 119px;
+    // продумать правый отступ, что бы не дёргался при изменении цены
+    padding: 0px 184px 0 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__button {
+    flex: 0 1 398px;
+  }
+  &__total {
+    display: flex;
+    align-items: center;
+  }
+  &__text {
+    margin: 0px 113px 0px 0px;
+  }
+  &__cost {
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 44px;
+  }
+  &__more {
+    font-size: 14px;
+  }
+  @media (max-width: $md1) {
+    &__wrapper {
+      padding: 16px;
+      flex-wrap: wrap;
+    }
+    &__button {
+      order: 1;
+    }
+    &__total {
+      order: 0;
+      flex: 1 1 auto;
+    }
+    &__text {
+      margin: 0px 4px 0px 0px;
+      font-weight: 700;
+    }
+    &__cost {
+      font-size: 14px;
+      line-height: 18px;
+      flex: 1 1 auto;
+    }
+  }
+  @media (min-width: $md1) {
+    &__more {
+      display: none;
+    }
+  }
 }
 //========================================================================================================================================================
 // popup
 
 .popup {
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	padding: 40px 16px 84px;
-	opacity: 0;
-	visibility: hidden;
-	background: $white;
-	transform: translate(0px, -100%);
-	transition: all 0.3s ease 0s;
-	&__title {
-		margin: 0px 0px 20px 0px;
-	}
-	&__item {
-		margin: 0px 0px 14px 0px;
-		&:last-of-type {
-			height: 66px;
-			border-top: 1px solid $grey;
-			border-bottom: 1px solid $grey;
-			margin: 19px 0px 0px 0px;
-		}
-	}
-	&__footer {
-		width: 100%;
-		position: fixed;
-		bottom: 0;
-		left: 0;
-		border-top: 1px solid $grey;
-		padding: 16px;
-	}
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 40px 16px 84px;
+  opacity: 0;
+  visibility: hidden;
+  background: $white;
+  transform: translate(0px, -100%);
+  transition: all 0.3s ease 0s;
+  &__title {
+    margin: 0px 0px 20px 0px;
+  }
+  &__item {
+    margin: 0px 0px 14px 0px;
+    &:last-of-type {
+      height: 66px;
+      border-top: 1px solid $grey;
+      border-bottom: 1px solid $grey;
+      margin: 19px 0px 0px 0px;
+    }
+  }
+  &__footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    border-top: 1px solid $grey;
+    padding: 16px;
+  }
 }
 .active {
-	opacity: 1;
-	visibility: visible;
-	transform: translate(0px, 0px);
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0px, 0px);
 }
