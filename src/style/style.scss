@@ -99,7 +99,7 @@ $md1: 1750px;
   padding: 0px 0px 155px 0px;
   @media (max-width: $md1) {
     max-width: 360px;
-    padding: 40px 16px 155px 16px;
+    padding: 35px 16px 155px 16px;
   }
 }
 // Header
@@ -198,7 +198,9 @@ $md1: 1750px;
     }
   }
   @media (max-width: $md1) {
-    display: none;
+    &__arrow {
+      display: none;
+    }
   }
 }
 
@@ -255,18 +257,19 @@ $md1: 1750px;
   flex-wrap: wrap;
   &__item {
     flex: 0 1 auto;
-    margin: 0px 16px 0px 0px;
+    margin: 0px 14px 0px 0px;
+    &:last-of-type {
+      margin: 0px 33px 0px 0px;
+    }
   }
   @media (max-width: $md1) {
     &__item {
       flex: 0 0 140px;
-      margin: 0px 8px 14px 0px;
+      margin: 0px 14px 14px 0px;
       min-height: 110px;
-    }
-  }
-  @media (min-width: $md1) {
-    &:last-of-type {
-      margin: 0px 33px 0px 0px;
+      &:last-of-type {
+        margin: 0px 0px 14px 0px;
+      }
     }
   }
 }
@@ -314,7 +317,7 @@ $md1: 1750px;
   flex-wrap: wrap;
   &__wrapper {
     flex: 0 1 572px;
-    margin: 0px 14px 15px 0px;
+    margin: 0px 14px 16px 0px;
     position: relative;
     &::before {
       content: "Имя и фамилия";
@@ -424,24 +427,28 @@ $md1: 1750px;
   border-top: 1px solid $grey;
   background-color: $white;
   &__wrapper {
-    min-height: 119px;
-    // продумать правый отступ, что бы не дёргался при изменении цены
-    padding: 0px 184px 0 120px;
+    height: 119px;
+    max-width: 1743px;
+    margin: 0px auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
   &__button {
     flex: 0 1 398px;
+    margin: 0px 0px 0px 43px;
   }
   &__total {
+    flex: 0 1 572px;
     display: flex;
     align-items: center;
   }
   &__text {
-    margin: 0px 113px 0px 0px;
   }
   &__cost {
+    margin: 0px 84px 0px 0px;
+    text-align: right;
+    flex: 1 1 auto;
     font-size: 35px;
     font-weight: 700;
     line-height: 44px;
@@ -466,6 +473,8 @@ $md1: 1750px;
       font-weight: 700;
     }
     &__cost {
+      text-align: left;
+      margin: 0px 0px 0px 0px;
       font-size: 14px;
       line-height: 18px;
       flex: 1 1 auto;
