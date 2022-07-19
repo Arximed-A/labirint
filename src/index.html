@@ -2,177 +2,180 @@
 <html lang="ru">
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>Тестовое задание Лабиринт</title>
-  <!--первый раз применяю normalize.css постарался почистить от лишнего -->
-  <link rel="stylesheet" href="./style/normalize.css">
-  <link rel="stylesheet" href="./style/style.css">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Тестовое задание Лабиринт</title>
+	<!--первый раз применяю normalize.css постарался почистить от лишнего -->
+	<link rel="stylesheet" href="./style/normalize.css">
+	<link rel="stylesheet" href="./style/style.css">
 </head>
 
 <body>
-  <!-- сомневался нужно ли делать страницу по центру или нет. Посмотрев у Вас на сайте, решил сделать её по центру -->
-  <form action="#">
-    <div class="wrapper">
-      <!-- Header -->
-      <h1 class="header-title">Оформление заказа</h1>
-      <!-- Body -->
-      <main class="body">
-        <!-- Доставка -->
-        <section class="body__delivery delivery">
-          <!-- Шапка доставки -->
-          <header class="delivery__header header-delivery">
-            <h2 class="header-delivery__title title">Доставка</h2>
-            <div class="header-delivery__navigation">
-              <div class="header-delivery__arrow">
-                <img src="./assets/img/arrow.svg" alt="arrow to right" class="header-delivery__img">
-              </div>
-              <div class="header-delivery__arrow">
-                <img src="./assets/img/arrow.svg" alt="arrow to right" class="header-delivery__img">
-              </div>
-            </div>
-          </header>
-          <!-- Адрес доставки-->
-          <div class="delivery__destination destination-delivery">
-            <div class="destination-delivery__adress adress-destination box box_active">
-              <div class="adress-destination__wrapper">
-                <h3 class="adress-destination__title subtitle">
-                  Почта России, курьер — 24-26 сент.
-                </h3>
-                <span class="adress-destination__text"> ул. Академика Королева, 73/3,
-                  Петропавловск- Камчатский,
-                  683000</span>
-              </div>
-              <span class="adress-destination__cost">+367 ₽</span>
-            </div>
-            <div class="destination-delivery__adress adress-destination box">
-              <div class="adress-destination__wrapper">
-                <h3 class="adress-destination__title subtitle">
-                  Лабиринт, курьер — 25 сент.
-                </h3>
-                <span class="adress-destination__text">Можайское шоссе, д. 21, кв. 50, Москва, 121471</span>
-              </div>
-              <span class="adress-destination__cost">0 ₽</span>
-            </div>
-          </div>
-          <a href="#" class="delivery__new-place link">Выбрать новое место и способ</a>
-          <!-- Дата доставки-->
-          <div class="delivery__date date-delivery">
-            <div class="date-delivery__item item-date box box_active">
-              <h3 class="item-date__title subtitle">пн, 24 сен — ср, 26 сен</h3>
-              <span class="item-date__text">10:00–19:00</span>
-            </div>
-            <div class="date-delivery__item item-date box">
-              <h3 class="item-date__title subtitle">чт, 27 сен — пт, 28 сен</h3>
-              <span class="item-date__text">10:00–19:00</span>
-            </div>
-            <a href="#" class="date-delivery__new-date link">Другие дата и время</a>
-          </div>
-          <!-- Доп услуги -->
-          <div class="delivery__service service">
-            <div class="service__item">
-              <input id="notification" type="checkbox" class="service__check">
-              <label for="notification" class="service__text">
-                Viber/СМС уведомления о статусе заказа
-              </label>
-            </div>
-            <div class="service__item">
-              <input id="metod" type="checkbox" class="service__check">
-              <label for="metod" class="service__text">
-                Оставить у двери (бесконтактная доставка)
-              </label>
-            </div>
-          </div>
-          <!-- Получатель -->
-          <div class="delivery__recipient recipient-delivery">
-            <h2 class="recipient-delivery__title title">Получатель</h2>
-            <div class="recipient-delivery__wrapper">
-              <select name="name" id="name" class="recipient-delivery__list subtitle box">
-                <option value="" class="recipient-delivery__item ">
-                  Вольфганг Вениаминович Константинопольский
-                </option>
-                <option value="" class="recipient-delivery__item">
-                  Константин Константинопольский
-                </option>
-                <option value="" class="recipient-delivery__item">
-                  Иванов Иван Иваныч
-                </option>
-              </select>
-            </div>
-            <div class="recipient-delivery__wrapper recipient-delivery__wrapper_small">
-              <select name="phone" id="phone" class="recipient-delivery__list recipient-delivery__list subtitle box">
-                <option value="" class="recipient-delivery__item ">
-                  +7 910 234-56-78
-                </option>
-                <option value="" class="recipient-delivery__item">
-                  +7 905 555 66 77
-                </option>
-              </select>
-            </div>
-            <a href="#" class="recipient-delivery__new-recipient link">Новый получатель</a>
-            <a href="#" class="recipient-delivery__new-phone link">Новый телефон</a>
-          </div>
-        </section>
-        <!-- Заказ -->
-        <section class="body__order order">
-          <h2 class="order__title title">
-            В заказе 4 товара
-            <span class="title title_slim">
-              (2 кг)
-            </span>
-          </h2>
-          <div class="order__wrapper">
-            <div class="order__item item-order">
-              <span class="item-order__text">Цена товаров</span>
-              <span class="item-order__number">29 456 ₽</span>
-            </div>
-            <div class="order__item item-order">
-              <span class="item-order__text">Все скидки</span>
-              <span class="item-order__number">–7 732 ₽</span>
-            </div>
-            <div class="order__item item-order">
-              <span class="item-order__text">Скидка за предоплату</span>
-              <span class="item-order__number">–3%</span>
-            </div>
-          </div>
-        </section>
-      </main>
-    </div>
+	<!-- сомневался нужно ли делать страницу по центру или нет. Посмотрев у Вас на сайте, решил сделать её по центру -->
+	<form action="#">
+		<div class="wrapper">
+			<!-- Header -->
+			<header class="header">
+				<h1 class="header__title">Оформление заказа</h1>
+			</header>
 
-    <!-- Footer  -->
-    <footer id="footer" class="footer">
-      <div class="footer__wrapper">
-        <button class="footer__button btn">Оформить и оплатить</button>
-        <div class="footer__total ">
-          <span class="footer__text">Итого к оплате на сайте:</span>
-          <span class="footer__cost">21 072 ₽</span>
-          <a href="#footer" id="moreInfo" class="footer__more link">Подробнее</a>
-        </div>
-      </div>
-    </footer>
-  </form>
-  <section id="popup" class="popup">
-    <h2 class="popup__title title">
-      В заказе 5 товаров <span class="title title_slim">(2 кг)</span>
-    </h2>
-    <div class="popup__item item-order">
-      <span class="item-order__text">Цена товаров</span>
-      <span class="item-order__number">29 456 ₽</span>
-    </div>
-    <div class="popup__item item-order">
-      <span class="item-order__text">Все скидки</span>
-      <span class="item-order__number">–7 732 ₽</span>
-    </div>
-    <div class="popup__item item-order ">
-      <span class="item-order__text">К оплате:</span>
-      <span class="item-order__number">21 072 ₽</span>
-    </div>
-    <footer class="popup__footer">
-      <button id="btn" class="popup__btn btn btn_white">Закрыть подробности</button>
-    </footer>
-  </section>
-  <script src="./script/script.js"></script>
+			<!-- Body -->
+			<main class="body">
+				<!-- Доставка -->
+				<section class="body__delivery delivery">
+					<!-- Шапка доставки -->
+					<header class="delivery__header header-delivery">
+						<h2 class="header-delivery__title title">Доставка</h2>
+						<div class="header-delivery__navigation">
+							<div class="header-delivery__arrow">
+								<img src="./assets/img/arrow.svg" alt="arrow to right" class="header-delivery__img">
+							</div>
+							<div class="header-delivery__arrow">
+								<img src="./assets/img/arrow.svg" alt="arrow to right" class="header-delivery__img">
+							</div>
+						</div>
+					</header>
+					<!-- Адрес доставки-->
+					<div class="delivery__destination destination-delivery">
+						<div class="destination-delivery__adress adress-destination box box_active">
+							<div class="adress-destination__wrapper">
+								<h3 class="adress-destination__title subtitle">
+									Почта России, курьер — 24-26 сент.
+								</h3>
+								<span class="adress-destination__text"> ул. Академика Королева, 73/3,
+									Петропавловск- Камчатский,
+									683000</span>
+							</div>
+							<span class="adress-destination__cost">+367 ₽</span>
+						</div>
+						<div class="destination-delivery__adress adress-destination box">
+							<div class="adress-destination__wrapper">
+								<h3 class="adress-destination__title subtitle">
+									Лабиринт, курьер — 25 сент.
+								</h3>
+								<span class="adress-destination__text">Можайское шоссе, д. 21, кв. 50, Москва, 121471</span>
+							</div>
+							<span class="adress-destination__cost">0 ₽</span>
+						</div>
+					</div>
+					<a href="#" class="delivery__new-place link">Выбрать новое место и способ</a>
+					<!-- Дата доставки-->
+					<div class="delivery__date date-delivery">
+						<div class="date-delivery__item item-date box box_active">
+							<h3 class="item-date__title subtitle">пн, 24 сен — ср, 26 сен</h3>
+							<span class="item-date__text">10:00–19:00</span>
+						</div>
+						<div class="date-delivery__item item-date box">
+							<h3 class="item-date__title subtitle">чт, 27 сен — пт, 28 сен</h3>
+							<span class="item-date__text">10:00–19:00</span>
+						</div>
+						<a href="#" class="date-delivery__new-date link">Другие дата и время</a>
+					</div>
+					<!-- Доп услуги -->
+					<div class="delivery__service service">
+						<div class="service__item">
+							<input id="notification" type="checkbox" class="service__check">
+							<label for="notification" class="service__text">
+								Viber/СМС уведомления о статусе заказа
+							</label>
+						</div>
+						<div class="service__item">
+							<input id="metod" type="checkbox" class="service__check">
+							<label for="metod" class="service__text">
+								Оставить у двери (бесконтактная доставка)
+							</label>
+						</div>
+					</div>
+					<!-- Получатель -->
+					<div class="delivery__recipient recipient-delivery">
+						<h2 class="recipient-delivery__title title">Получатель</h2>
+						<div class="recipient-delivery__wrapper">
+							<select name="name" id="name" class="recipient-delivery__list subtitle box">
+								<option value="" class="recipient-delivery__item ">
+									Вольфганг Вениаминович Константинопольский
+								</option>
+								<option value="" class="recipient-delivery__item">
+									Константин Константинопольский
+								</option>
+								<option value="" class="recipient-delivery__item">
+									Иванов Иван Иваныч
+								</option>
+							</select>
+						</div>
+						<div class="recipient-delivery__wrapper recipient-delivery__wrapper_small">
+							<select name="phone" id="phone" class="recipient-delivery__list recipient-delivery__list subtitle box">
+								<option value="" class="recipient-delivery__item ">
+									+7 910 234-56-78
+								</option>
+								<option value="" class="recipient-delivery__item">
+									+7 905 555 66 77
+								</option>
+							</select>
+						</div>
+						<a href="#" class="recipient-delivery__new-recipient link">Новый получатель</a>
+						<a href="#" class="recipient-delivery__new-phone link">Новый телефон</a>
+					</div>
+				</section>
+				<!-- Заказ -->
+				<section class="body__order order">
+					<h2 class="order__title title">
+						В заказе 4 товара
+						<span class="title title_slim">
+							(2 кг)
+						</span>
+					</h2>
+					<div class="order__wrapper">
+						<div class="order__item item-order">
+							<span class="item-order__text">Цена товаров</span>
+							<span class="item-order__number">29 456 ₽</span>
+						</div>
+						<div class="order__item item-order">
+							<span class="item-order__text">Все скидки</span>
+							<span class="item-order__number">–7 732 ₽</span>
+						</div>
+						<div class="order__item item-order">
+							<span class="item-order__text">Скидка за предоплату</span>
+							<span class="item-order__number">–3%</span>
+						</div>
+					</div>
+				</section>
+			</main>
+		</div>
+
+		<!-- Footer  -->
+		<footer id="footer" class="footer">
+			<div class="footer__wrapper">
+				<button class="footer__button btn">Оформить и оплатить</button>
+				<div class="footer__total ">
+					<span class="footer__text">Итого к оплате на сайте:</span>
+					<span class="footer__cost">21 072 ₽</span>
+					<a href="#footer" id="moreInfo" class="footer__more link">Подробнее</a>
+				</div>
+			</div>
+		</footer>
+	</form>
+	<section id="popup" class="popup">
+		<h2 class="popup__title title">
+			В заказе 5 товаров <span class="title title_slim">(2 кг)</span>
+		</h2>
+		<div class="popup__item item-order">
+			<span class="item-order__text">Цена товаров</span>
+			<span class="item-order__number">29 456 ₽</span>
+		</div>
+		<div class="popup__item item-order">
+			<span class="item-order__text">Все скидки</span>
+			<span class="item-order__number">–7 732 ₽</span>
+		</div>
+		<div class="popup__item item-order ">
+			<span class="item-order__text">К оплате:</span>
+			<span class="item-order__number">21 072 ₽</span>
+		</div>
+		<footer class="popup__footer">
+			<button id="btn" class="popup__btn btn btn_white">Закрыть подробности</button>
+		</footer>
+	</section>
+	<script src="./script/script.js"></script>
 </body>
 
 </html>

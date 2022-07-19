@@ -105,14 +105,14 @@
   }
 }
 
-.header-title {
+.header__title {
   margin: 49px 0px 17px 44px;
   font-size: 35px;
   font-weight: 700;
   line-height: 44px;
 }
 @media (max-width: 1750px) {
-  .header-title {
+  .header__title {
     font-size: 27px;
     margin: 0px 0px 35px 0px;
   }
